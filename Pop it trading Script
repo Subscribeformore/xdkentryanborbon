@@ -1,0 +1,134 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Pop it Trading Script Made by xdkentryanborbon","DarkTheme")
+
+---Tabs
+
+local Tab1 = window:NewTab("Auto Buy Item")
+local Tab1Section = Tab1:NewSection("Auto Buy Valentine Items")
+local Tab2 = window:NewTab("Buy Item")
+local Tab2Section = Tab2:NewSection("Buy Valentine Items")
+local Tab3 = window:NewTab("Credits")
+local Tab3Section = Tab3:NewSection("Made By xdkentryanborbon")
+local Tab3Section = Tab3:NewSection("Subscribe To xdkentryanborbon For More")
+
+---Buttons
+
+Tab1Section:NewToggle("auto buy Heart Lightstick", "auto buys", 
+function(state) if state then _G.on = true while 
+_G.on do wait() local args = { [1] = "Heart Lightstick" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab1Section:NewToggle("auto buy Heart Cake", "auto buys", 
+function(state) if state then _G.on = true while 
+_G.on do wait() local args = { [1] = "Heart Cake" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab1Section:NewToggle("auto buy Heart Potion", "auto buys", 
+function(state) if state then _G.on = true while 
+_G.on do wait() local args = { [1] = "Heart Potion" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab1Section:NewToggle("auto buy Heart Gift", "auto buys", 
+function(state) if state then _G.on = true while 
+_G.on do wait() local args = { [1] = "Heart Gift" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab1Section:NewToggle("auto buy Heart Light", "auto buys", 
+function(state) if state then _G.on = true while 
+_G.on do wait() local args = { [1] = "Heart Light" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab1Section:NewToggle("auto buy Heart Radio", "auto buys", 
+function(state) if state then _G.on = true while
+ _G.on do wait() local args = { [1] = "Heart Radio" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab1Section:NewToggle("auto buy Heart Headphones", "auto buys", 
+function(state) if state then _G.on = true while 
+_G.on do wait() local args = { [1] = "Heart Headphones" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab1Section:NewToggle("auto buy Heart Balloon", "auto buys", 
+function(state) if state then _G.on = true while
+ _G.on do wait() local args = { [1] = "Heart Balloon" } 
+game:GetService("ReplicatedStorage").RemoteEvents.Buy
+ItemCash:FireServer(unpack(args)) end else _G.on = 
+false end end)
+
+Tab2Section:NewButton("Buy Heart Light Stick","ButtonInfo",function()
+local args = {
+    [1] = "Heart Lightstick"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
+
+Tab2Section:NewButton("Buy Heart Cake", "ButtonInfo", function() 
+local args = {
+    [1] = "Heart Cake"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
+
+Tab2Section:NewButton("Buy Heart Potion", "ButtonInfo", function() 
+local args = {
+    [1] = "Heart Potion"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
+
+Tab2Section:NewButton("Buy Heart Gift", "ButtonInfo", function() 
+local args = {
+    [1] = "Heart Gift"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
+
+Tab2Section:NewButton("Buy Heart Light", "ButtonInfo", function() 
+local args = {
+    [1] = "Heart Light"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
+
+Tab2Section:NewButton("Buy Heart Radio", "ButtonInfo", function() 
+local args = {
+    [1] = "Heart Radio"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
+
+Tab2Section:NewButton("Buy Heart Headphones", "ButtonInfo", function() 
+local args = {
+    [1] = "Heart Headphones"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
+
+Tab2Section:NewButton("Buy Heart Balloon", "ButtonInfo", function() 
+local args = {
+    [1] = "Heart Balloon"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end) 
